@@ -4,9 +4,8 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const navigation = [
-  { name: "About", href: "#about" },
-  { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ];
 

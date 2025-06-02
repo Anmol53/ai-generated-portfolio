@@ -5,9 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Anmol Agrawal | Software Developer",
-  description: "Personal portfolio of Anmol Agrawal, a Software Developer specializing in web development and modern technologies.",
-  keywords: ["Software Developer", "Web Developer", "Full Stack Developer", "React", "Next.js", "TypeScript"],
+  title: "Anmol Agrawal - Software Developer",
+  description: "Portfolio website of Anmol Agrawal, a passionate Software Developer crafting beautiful and functional web experiences.",
 };
 
 export default function RootLayout({
@@ -17,6 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+      </head>
       <body className={`${inter.className} bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`}>
         {children}
       </body>
