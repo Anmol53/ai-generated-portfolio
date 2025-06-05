@@ -23,7 +23,7 @@ export function Projects() {
               key={project.title}
               className="group relative bg-gray-900/50 hover:shadow-2xl transition-all duration-500 border-gray-800/50 backdrop-blur-sm"
             >
-              <div className="p-8">
+              <div className=" p-0 md:p-4 lg:p-8">
                 <div className="flex justify-between items-start mb-6">
                   <Heading level={3} gradient className="group-hover:from-gray-100 group-hover:to-white">
                     {project.title}
