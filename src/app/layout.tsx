@@ -110,7 +110,7 @@ export const metadata: Metadata = {
     'India',
   ],
   verification: {
-    google: 'your-google-site-verification', // Add your Google verification code
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
   },
   alternates: {
     canonical: siteConfig.url,
