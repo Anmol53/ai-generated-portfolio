@@ -5,22 +5,22 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "Leafy Cafe",
-    description: "A full-stack restaurant management system featuring an elegant UI, real-time order tracking, and comprehensive menu management. Built with modern web technologies and best practices for performance and user experience.",
-    tags: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
+    description: "A beautifully crafted website for 'Leafy Cafe', a fictional multi-chain vegan restaurant. Features an elegant, responsive design that showcases the restaurant's menu, locations, and contact information. Built with pure HTML, CSS, and JavaScript, demonstrating mastery of core web technologies without relying on frameworks.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Web Animation"],
     liveLink: "/leafy-cafe",
     githubLink: "https://github.com/Anmol53/leafy-cafe"
   },
   {
     title: "BMI Tracker",
-    description: "A comprehensive health monitoring application that helps users track their Body Mass Index (BMI) over time. Features interactive data visualization, personalized health insights, and progress tracking with historical data analysis.",
-    tags: ["React.js", "Chart.js", "CSS3", "LocalStorage"],
+    description: "A Progressive Web App (PWA) that helps users monitor their Body Mass Index over time. Features include BMI calculation, historical data tracking with interactive timeline charts using Recharts, and offline functionality. Being a PWA, it can be installed on any device for a native app-like experience.",
+    tags: ["React.js", "PWA", "Recharts", "LocalStorage", "Service Workers"],
     liveLink: "/bmi-tracker",
     githubLink: "https://github.com/Anmol53/bmi-tracker"
   },
   {
     title: "Gradient Generator",
-    description: "A sophisticated tool for creating and exploring beautiful color gradients with real-time preview. Features include CSS code generation, gradient angle control, color stop management, and a curated collection of preset gradients.",
-    tags: ["JavaScript", "HTML5", "CSS3", "Color Theory"],
+    description: "A developer-focused tool that simplifies the creation of CSS gradients. Built with vanilla JavaScript, it offers real-time gradient preview, angle control, and instant CSS code generation. The minimalist implementation demonstrates how powerful functionality can be achieved with pure HTML, CSS, and JavaScript.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Developer Tools"],
     liveLink: "/gradient-generator",
     githubLink: "https://github.com/Anmol53/gradient-generator"
   },
@@ -30,13 +30,6 @@ const projects = [
     tags: ["JavaScript", "CSS Animations", "Canvas API", "WebGL"],
     liveLink: "/bubble",
     githubLink: "https://github.com/Anmol53/interactive-animations"
-  },
-  {
-    title: "CUBG",
-    description: "Coder Unknowns Battle Grounds - An innovative competitive coding platform that gamifies programming challenges. Features real-time multiplayer competitions, interactive code execution, and a unique battle royale-style ranking system.",
-    tags: ["React.js", "Node.js", "WebSocket", "MongoDB"],
-    liveLink: "/cubg",
-    githubLink: "https://github.com/Anmol53/cubg"
   }
 ];
 
