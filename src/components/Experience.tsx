@@ -9,12 +9,23 @@ const experiences = [
     duration: "Feb 2022 - Present",
     location: "Mumbai, IN",
     description: [
-      "Full Stack Developer contributing to the development and enhancement of an in-house Marketing Automation Platform",
-      "Designed features facilitating easy association and streamlined management of modules (campaigns, segments, templates)",
-      "Improved user workflow and promoted a clutter-free environment through efficient module management",
-      "Working with modern tech stack including React JS, Node JS, PHP, and AWS services"
+      "Developing and enhancing an in-house Marketing Automation Platform that segments users and delivers targeted communications across multiple channels (Email, SMS, Push Notifications).",
+      "Implemented user segmentation using Elastic Search to efficiently query and filter user profiles based on various attributes.",
+      "Built scalable data pipelines using AWS services (Lambda, Kinesis, EC2, ECS) to process and sync user data.",
+      "Designed and optimized campaign management system for creating, scheduling, and tracking multi-channel communications.",
+      "Utilized Redis for caching and MongoDB for storing campaign data, improving system performance and response times.",
+      "Implemented comprehensive monitoring using ELK Stack for tracking campaign deliveries and user engagement metrics."
     ],
-    tags: ["React.js", "Node.js", "PHP", "AWS Kinesis", "AWS Lambda"]
+    tags: [
+      "React.js",
+      "Node.js",
+      "Python",
+      "AWS Lambda",
+      "AWS Kinesis",
+      "Elastic Search",
+      "Redis",
+      "MongoDB"
+    ]
   },
   {
     title: "Digital Specialist Engineer",
@@ -22,10 +33,10 @@ const experiences = [
     duration: "Jan 2021 - Jan 2022",
     location: "Pune, IN",
     description: [
-      "Worked as an ETL Developer focusing on data transformation and pipeline development",
-      "Developed Azure pipelines and migrated data transformation logic from SSIS into DBT",
-      "Implemented efficient data processing workflows using Azure services",
-      "Collaborated with teams to ensure smooth data migration and transformation processes"
+      "Worked as an ETL Developer focusing on data transformation and pipeline development.",
+      "Developed Azure pipelines and migrated data transformation logic from SSIS into DBT.",
+      "Implemented efficient data processing workflows using Azure services.",
+      "Collaborated with teams to ensure smooth data migration and transformation processes."
     ],
     tags: ["Azure Data Factory", "Azure Synapse", "DBT", "ETL", "Data Engineering"]
   }
@@ -43,30 +54,39 @@ export function Experience() {
           className="max-w-4xl mx-auto"
         >
           <h2 className="text-3xl font-bold mb-8">Experience</h2>
-          <div className="space-y-12">
-            {experiences.map((experience, index) => (
-              <motion.div
-                key={`${experience.company}-${index}`}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="relative pl-8 md:pl-0"
-              >
-                {/* Timeline line */}
-                <div className="hidden md:block absolute left-0 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700 ml-[7.5rem]" />
-                
-                <div className="md:grid md:grid-cols-[150px_1fr] gap-8">
-                  {/* Date */}
-                  <div className="text-gray-600 dark:text-gray-400 mb-2 md:mb-0 font-medium">
+          
+          <div className="relative">
+            {/* Main timeline line - only visible on desktop */}
+            <div className="absolute hidden md:block w-0.5 bg-gray-200 dark:bg-gray-800 h-full left-8 top-3" />
+            
+            <div className="space-y-12">
+              {experiences.map((experience, index) => (
+                <motion.div
+                  key={`${experience.company}-${index}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="relative flex flex-col md:flex-row gap-4 md:gap-8 md:ml-0"
+                >
+                  {/* Timeline dot and date - only visible on desktop */}
+                  <div className="hidden md:flex md:w-48 items-start">
+                    <div className="relative flex items-center">
+                      <div className="w-4 h-4 rounded-full border-2 border-blue-600 bg-white dark:bg-gray-900" />
+                      <div className="w-8 h-[2px] bg-gray-200 dark:bg-gray-800 ml-2" />
+                    </div>
+                    <div className="text-gray-600 dark:text-gray-400 font-medium">
+                      {experience.duration}
+                    </div>
+                  </div>
+
+                  {/* Mobile date */}
+                  <div className="md:hidden text-gray-600 dark:text-gray-400 font-medium mb-2">
                     {experience.duration}
                   </div>
 
-                  {/* Content */}
-                  <div className="relative">
-                    {/* Timeline dot */}
-                    <div className="hidden md:block absolute -left-[2.18rem] top-3 w-4 h-4 rounded-full border-2 border-blue-600 bg-white dark:bg-gray-900" />
-                    
+                  {/* Content card */}
+                  <div className="flex-1">
                     <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-md">
                       <h3 className="text-xl font-semibold mb-1">
                         {experience.title}
@@ -101,9 +121,9 @@ export function Experience() {
                       </div>
                     </div>
                   </div>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
