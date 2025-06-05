@@ -21,7 +21,7 @@ export function Projects() {
           {projects.map((project) => (
             <Card
               key={project.title}
-              className="group relative bg-gray-900/50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 border-gray-800/50 backdrop-blur-sm"
+              className="group relative bg-gray-900/50 hover:shadow-2xl transition-all duration-500 border-gray-800/50 backdrop-blur-sm"
             >
               <div className="p-8">
                 <div className="flex justify-between items-start mb-6">
@@ -45,10 +45,10 @@ export function Projects() {
                 <div className="flex flex-wrap gap-4 sm:gap-6">
                   <Link
                     href={project.liveLink}
-                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-100 to-white hover:from-white hover:to-gray-100 text-gray-900 rounded-xl shadow-lg shadow-white/10 hover:shadow-white/20 transform hover:scale-[1.02] transition-all duration-200"
+                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-100 to-white hover:from-white hover:to-gray-100 text-gray-900 hover:text-gray-800 rounded-xl shadow-lg shadow-white/10 hover:shadow-white/20 transform hover:scale-[1.02] transition-all duration-200"
                   >
                     <span className="font-medium">View Live</span>
-                    <Icon icon={FaExternalLinkAlt} className="ml-2 transition-transform duration-200 group-hover:translate-x-1" />
+                    <Icon icon={FaExternalLinkAlt} className="ml-2 transition-transform duration-200 " />
                   </Link>
                   <Link
                     href={project.githubLink}

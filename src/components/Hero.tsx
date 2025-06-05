@@ -64,7 +64,7 @@ export function Hero() {
             href="#contact"
             className={cn(
               "px-5 py-2.5 bg-gradient-to-r from-gray-100 to-white hover:from-white hover:to-gray-100",
-              "text-gray-900 rounded-xl shadow-lg shadow-white/10 hover:shadow-white/20",
+              "text-gray-900 hover:text-gray-800 rounded-xl shadow-lg shadow-white/10 hover:shadow-white/20",
               "transform hover:scale-[1.02] transition-all duration-200 text-sm sm:text-base"
             )}
           >

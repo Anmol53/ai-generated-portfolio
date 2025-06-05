@@ -33,6 +33,6 @@ export const projects: Project[] = [
     description: "A showcase of advanced web animations including particle systems, fluid simulations, and interactive effects. Demonstrates mastery of modern web animation techniques and performance optimization.",
     tags: ["JavaScript", "CSS Animations", "Canvas API", "WebGL"],
     liveLink: "/bubble",
-    githubLink: "https://github.com/Anmol53/interactive-animations"
+    githubLink: "https://github.com/Anmol53/bubble"
   }
 ]; 

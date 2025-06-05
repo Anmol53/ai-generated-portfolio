@@ -18,7 +18,7 @@ export function Icon({ className, icon: IconComponent, size = 'md', ...props }: 
   return (
     <div
       className={cn(
-        'inline-flex items-center justify-center',
+        'flex items-center justify-center',
         sizeClasses[size],
         className
       )}
