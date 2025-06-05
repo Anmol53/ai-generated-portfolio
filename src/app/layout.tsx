@@ -160,7 +160,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.className} bg-black text-gray-100`}>
+      <body className={`${inter.className} bg-black text-gray-100 min-h-screen`}>
         {children}
       </body>
     </html>
