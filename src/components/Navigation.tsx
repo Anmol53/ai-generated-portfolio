@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -8,6 +8,11 @@ import { motion, AnimatePresence } from "framer-motion";
 const navigation = [
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
+  {
+    name: "Blogs",
+    href: "https://blogs.anmolagrawal.dev",
+    external: true,
+  },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -52,15 +57,27 @@ export function Navigation({ className }: { className?: string }) {
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex items-center space-x-8">
-        {navigation.map((item) => (
-          <Link
-            key={item.name}
-            href={item.href}
-            className="text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
-          >
-            {item.name}
-          </Link>
-        ))}
+        {navigation.map((item) =>
+          item.external ? (
+            <a
+              key={item.name}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+            >
+              {item.name}
+            </a>
+          ) : (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+            >
+              {item.name}
+            </Link>
+          )
+        )}
       </nav>
 
       {/* Mobile Navigation */}
@@ -89,4 +106,4 @@ export function Navigation({ className }: { className?: string }) {
       </AnimatePresence>
     </div>
   );
-} 
+}
