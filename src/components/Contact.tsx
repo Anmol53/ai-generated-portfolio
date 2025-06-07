@@ -133,6 +133,7 @@ export function Contact() {
                 name="message"
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                rows={6}
                 required
                 disabled={status === 'loading'}
               />

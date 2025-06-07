@@ -1,8 +1,8 @@
 "use client";
 
 import { TypeAnimation } from "react-type-animation";
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import { SiHashnode } from 'react-icons/si';
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { SiHashnode } from "react-icons/si";
 import { Section } from "./ui/Section";
 import { Container } from "./ui/Container";
 import { Heading } from "./ui/Heading";
@@ -25,7 +25,7 @@ export function Hero() {
         </div>
 
         <Heading level={1} gradient className="text-center mb-6">
-          Hi, I&apos;m Anmol Agrawal 👋
+          Hi, I&apos;m Anmol Agrawal
         </Heading>
 
         <div className="text-lg sm:text-xl lg:text-2xl text-gray-600 dark:text-gray-400 mb-8 text-center h-[48px] sm:h-[56px] lg:h-[72px] flex items-center justify-center">
@@ -50,12 +50,13 @@ export function Hero() {
 
         <div className="prose dark:prose-invert max-w-none mb-12">
           <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 text-center leading-relaxed max-w-3xl mx-auto">
-            A passionate Software Developer with over {calculateExperience('2021-01-01')} years of experience in
-            building web applications. Currently working at People Interactive
+            A passionate Software Developer with over{" "}
+            {calculateExperience("2021-01-01")} years of experience in building
+            web applications. Currently working at People Interactive
             (Shaadi.com) where I contribute to developing and enhancing the
             Marketing Automation Platform. I specialize in full-stack
-            development using modern technologies like React, Node.js, and
-            cloud services.
+            development using modern technologies like React, Node.js, and cloud
+            services.
           </p>
         </div>
 

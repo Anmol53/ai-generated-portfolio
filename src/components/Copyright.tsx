@@ -6,7 +6,7 @@ interface CopyrightProps {
 
 export function Copyright({ appName }: CopyrightProps) {
   return (
-    <div className="w-full text-center bg-black/70 text-gray-400 leading-8 text-xs p-2">
+    <div className="w-full text-center bg-black/90 text-gray-400 leading-8 text-xs p-2">
       <p>
         {appName && `Copyright &copy; ${appName} ${new Date().getFullYear()} |`}
         This website is developed by{" "}

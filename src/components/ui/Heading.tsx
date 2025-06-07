@@ -7,12 +7,12 @@ interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
 }
 
 const headingClasses = {
-  1: 'text-5xl font-bold',
-  2: 'text-4xl font-bold',
-  3: 'text-3xl font-bold',
-  4: 'text-2xl font-bold',
-  5: 'text-xl font-bold',
-  6: 'text-lg font-bold'
+  1: 'text-5xl leading-normal font-bold',
+  2: 'text-4xl leading-normal font-bold',
+  3: 'text-3xl leading-normal font-bold',
+  4: 'text-2xl leading-normal font-bold',
+  5: 'text-xl leading-normal font-bold',
+  6: 'text-lg leading-normal font-bold'
 };
 
 export function Heading({ className, level = 2, gradient = false, children, ...props }: HeadingProps) {

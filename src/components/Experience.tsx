@@ -13,7 +13,7 @@ export function Experience() {
   return (
     <Section id="experience">
       <Container maxWidth="xl">
-        <Heading level={2} className="mb-8">
+        <Heading level={2} gradient className="mb-8">
           Experience
         </Heading>
 
@@ -45,7 +45,7 @@ export function Experience() {
 
                 {/* Content card */}
                 <Card className="flex-1 p-6 dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-100 dark:border-gray-800 transition-colors duration-200">
-                  <Heading level={3} className="mb-1">
+                  <Heading level={3} gradient className="mb-1">
                     {experience.title}
                   </Heading>
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600 dark:text-gray-400 mb-4">

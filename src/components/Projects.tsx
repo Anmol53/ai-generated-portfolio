@@ -18,22 +18,18 @@ export function Projects() {
       className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black"
     >
       <Container maxWidth="xl">
-        <Heading level={2} gradient className="text-center mb-12">
-          Featured Projects
+        <Heading level={2} gradient className="mb-12">
+          Projects
         </Heading>
         <div className="grid gap-10">
           {projects.map((project) => (
             <Card
               key={project.title}
-              className="group relative bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 transition-all duration-500 border border-gray-100 dark:border-gray-800 backdrop-blur-sm"
+              className="group relative bg-white hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 transition-all duration-500 border border-gray-100 dark:border-gray-800 backdrop-blur-sm"
             >
               <div className="p-0 md:p-4 lg:p-8">
                 <div className="flex justify-between items-start mb-6">
-                  <Heading
-                    level={3}
-                    gradient
-                    className="group-hover:from-gray-900 group-hover:to-gray-800 dark:group-hover:from-gray-100 dark:group-hover:to-white"
-                  >
+                  <Heading level={3} gradient>
                     {project.title}
                   </Heading>
                 </div>
