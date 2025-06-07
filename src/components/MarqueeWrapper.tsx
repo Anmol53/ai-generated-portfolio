@@ -65,7 +65,7 @@ export const SkillCard = ({
     {icon === "custom-datadog" ? (
       <i className="w-9 h-9 relative">
         <Image
-          src="/icons/dd_icon_white.svg"
+          src="https://cdn.worldvectorlogo.com/logos/datadog.svg"
           alt="DataDog"
           width={32}
           height={32}
