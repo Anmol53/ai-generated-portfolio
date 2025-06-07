@@ -80,7 +80,7 @@ export function Contact() {
           {/* Contact Info */}
           <div>
             <div className="prose dark:prose-invert mb-8">
-              <p className="text-lg text-gray-400">
+              <p className="text-lg text-gray-600 dark:text-gray-400">
                 I&apos;m always interested in hearing about new opportunities,
                 collaborations, or just having a chat about technology.
               </p>
@@ -94,7 +94,7 @@ export function Contact() {
                     key={link.name}
                     href={link.url}
                     external
-                    className="flex items-center gap-2 hover:text-blue-400"
+                    className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
                   >
                     <Icon icon={link.Icon} />
                     <span>{link.name}</span>

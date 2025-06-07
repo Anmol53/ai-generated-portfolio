@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { Section } from "./ui/Section";
 import { Container } from "./ui/Container";
@@ -6,19 +6,21 @@ import { Heading } from "./ui/Heading";
 import { Card } from "./ui/Card";
 import { Tag } from "./ui/Tag";
 import { Icon } from "./ui/Icon";
-import { FaMapMarkerAlt } from 'react-icons/fa';
+import { FaMapMarkerAlt } from "react-icons/fa";
 import { experiences } from "@/constants/experience";
 
 export function Experience() {
   return (
     <Section id="experience">
       <Container maxWidth="xl">
-        <Heading level={2} className="mb-8">Experience</Heading>
-        
+        <Heading level={2} className="mb-8">
+          Experience
+        </Heading>
+
         <div className="relative">
           {/* Main timeline line - only visible on desktop */}
           <div className="absolute hidden md:block w-0.5 bg-gray-200 dark:bg-gray-800 h-full left-8 top-3" />
-          
+
           <div className="space-y-12">
             {experiences.map((experience) => (
               <div
@@ -29,7 +31,7 @@ export function Experience() {
                 <div className="hidden md:flex md:w-48 items-start">
                   <div className="relative flex items-center">
                     <div className="w-4 h-4 rounded-full border-2 border-blue-600 bg-white dark:bg-gray-900" />
-                    <div className="w-8 h-[2px] bg-gray-200 dark:bg-gray-800 ml-2" />
+                    <div className="w-8 h-[2px] bg-gray-200 dark:bg-gray-800" />
                   </div>
                   <div className="text-gray-600 dark:text-gray-400 font-medium">
                     {experience.duration}
@@ -42,7 +44,7 @@ export function Experience() {
                 </div>
 
                 {/* Content card */}
-                <Card className="flex-1 p-6">
+                <Card className="flex-1 p-6 dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-100 dark:border-gray-800 transition-colors duration-200">
                   <Heading level={3} className="mb-1">
                     {experience.title}
                   </Heading>
@@ -58,7 +60,9 @@ export function Experience() {
                   </div>
                   <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400 mb-4">
                     {experience.description.map((point, i) => (
-                      <li key={i} className="pl-2">{point}</li>
+                      <li key={i} className="pl-2">
+                        {point}
+                      </li>
                     ))}
                   </ul>
                   <div className="flex flex-wrap gap-2">
@@ -79,4 +83,4 @@ export function Experience() {
       </Container>
     </Section>
   );
-} 
+}

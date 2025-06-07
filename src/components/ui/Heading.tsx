@@ -21,7 +21,7 @@ export function Heading({ className, level = 2, gradient = false, children, ...p
     {
       className: cn(
         headingClasses[level],
-        gradient && 'bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400',
+        gradient && 'bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400',
         className
       ),
       ...props
