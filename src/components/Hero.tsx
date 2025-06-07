@@ -15,15 +15,6 @@ export function Hero() {
   return (
     <Section className="min-h-screen flex items-center bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-gray-900">
       <Container maxWidth="xl">
-        <div className="relative w-28 h-28 rounded-full overflow-hidden mb-8 mx-auto group">
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-200 to-gray-100 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-full" />
-          <img
-            src="https://avatars.githubusercontent.com/u/26030484?v=4"
-            alt="Anmol Agrawal"
-            className="w-full h-full object-cover rounded-full ring-2 ring-gray-200 dark:ring-gray-700 group-hover:ring-gray-300 dark:group-hover:ring-gray-500 transition-all duration-300"
-          />
-        </div>
-
         <Heading level={1} gradient className="text-center mb-6">
           Hi, I&apos;m Anmol Agrawal
         </Heading>
